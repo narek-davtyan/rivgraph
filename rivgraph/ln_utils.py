@@ -463,7 +463,7 @@ def add_artificial_nodes(links, nodes, gd_obj):
     if link_forsort[-2, 0:1] == link_forsort[-1 + 1, 0:1]:
         pairs.add((link_forsort[-2,2], link_forsort[-1, 2]))
     # Convert from set of tuples to list of lists
-    pairs = [[*p] for p in pairs] # Pairs may also be triplets
+    pairs = [[p] for p in pairs] # Pairs may also be triplets
     
     if 'len' not in links.keys():
         links = append_link_lengths(links, gd_obj)
