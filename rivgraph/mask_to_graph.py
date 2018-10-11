@@ -11,7 +11,7 @@ import rivgraph.ln_utils as lnu
 import rivgraph.im_utils as iu
 from skimage import morphology, measure
 
-from ordered_set import OrderedSet
+from rivgraph.ordered_set import OrderedSet
 import numpy as np
 import cv2
 
